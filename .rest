@@ -1,1 +1,13 @@
-GET http://localhost:8080/credit-card/
+POST http://localhost:8080/credit-card/add
+content-type: application/json
+
+{
+    "name": "Valid user 2",
+    "card_number": "4485275742308327",
+    "card_limit": 2000,
+    "balance": 0
+}
+
+###
+
+GET http://localhost:8080/credit-card/all
