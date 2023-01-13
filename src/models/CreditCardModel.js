@@ -1,5 +1,7 @@
 import lokijs from 'lokijs';
 
-const CreditCardModel = new lokijs('CreditCardModel');
+const db = new lokijs('main.db');
+
+const CreditCardModel = db.addCollection('CreditCard');
 
 export default CreditCardModel;
